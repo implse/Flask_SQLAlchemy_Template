@@ -64,11 +64,18 @@ launch `sqlite3` from the terminal.
 .schema
 ````
 
-## Add your first entries:
+### Add Users
 
 ```
 INSERT INTO user (username, email) VALUES ("Dave Brubeck", "dave.brubeck@quartet.liv");
 INSERT INTO user (username, email) VALUES ("Paul Desmond", "paul.desmond@quartet.liv");
 INSERT INTO user (username, email) VALUES ("Joe Morello", "joe.morello@quartet.liv");
 INSERT INTO user (username, email) VALUES ("Eugene Wright", "eugene.wright@quartet.liv");
+```
+
+### SQL commands
+
+```
+SELECT name, email FROM user;
+
 ```
