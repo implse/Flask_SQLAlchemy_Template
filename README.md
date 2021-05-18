@@ -12,3 +12,22 @@ SQLAlchemy abstract the database system, simplifying the interactions with the d
 ## What is Flask-SQLAlchemy?
 
 Flask-SQLAlchemy is a Flask microframework extension which adds support for the SQLAlchemy SQL toolkit/ORM (Object Relational Mapping).
+
+
+## Configuration
+
+- Create a project folder
+
+- Create a virtual environment using the command:
+
+    `python -m venv env`
+
+- Clone the GitHub repo Flask SQLAlchemy Template:
+
+    `git clone https://github.com/implse/Flask_SQLAlchemy_Template.git`
+
+- Install requirements.txt :
+
+    `pip install requirements.txt`
+
+- Add your personal `SECRET KEY`
