@@ -11,7 +11,7 @@ SQLAlchemy abstract the database system, simplifying the interactions with the d
 
 ## What is Flask-SQLAlchemy?
 
-Flask-SQLAlchemy is a Flask microframework extension which adds support for the SQLAlchemy SQL toolkit/ORM (Object Relational Mapping).
+Flask-SQLAlchemy is an extension for Flask which adds support for the SQLAlchemy SQL toolkit/ORM (Object Relational Mapping).
 
 
 ## Configuration
@@ -38,7 +38,7 @@ Flask-SQLAlchemy is a Flask microframework extension which adds support for the 
 The very first thing to do is to instruct Flask-SQLAlchemy to create a database based
 on the model classes.
 
-The db.create_all() function locates all the subclasses of db.Model and creates the  corresponding tables in the database.
+The `db.create_all()` function locates all the subclasses of `db.Model` and creates the corresponding tables in the database.
 
 from the terminal launch `flask shell` or `python` then type the following commands.
 
