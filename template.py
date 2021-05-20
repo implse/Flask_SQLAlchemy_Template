@@ -24,4 +24,4 @@ class User(db.Model):
 
 @app.route("/")
 def index():
-    return "<p>SQL Alchemy Template</p>"
+    return "<h2>You have just created your first Flask application supporting databases!</h2>"

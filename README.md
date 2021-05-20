@@ -32,6 +32,10 @@ Flask-SQLAlchemy is an extension for Flask which adds support for the SQLAlchemy
 
 - Add your personal `SECRET KEY`
 
+To enable communication with a database, the Flask-SQLAlchemy extension takes the location of the application’s database from the `SQLALCHEMY_DATABASE_URI`.
+
+`SQLALCHEMY_TRACK_MODIFICATIONS` configuration option to False to disable a feature of Flask-SQLAlchemy that signals the application every time a change is about to be made in the database.
+
 
 ## Database Operations
 
