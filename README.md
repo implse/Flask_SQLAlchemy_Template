@@ -37,6 +37,21 @@ To enable communication with a database, the Flask-SQLAlchemy extension takes th
 `SQLALCHEMY_TRACK_MODIFICATIONS` configuration option to False to disable a feature of Flask-SQLAlchemy that signals the application every time a change is about to be made in the database.
 
 
+
+## Model Definition
+
+In the context of an ORM, a `model` is a Python class with attributes that
+match the columns of a corresponding database table.
+
+To create a `model` or table schema to your application, you need to create a `class` that inherits from Model.
+
+```
+class User(db.Model):
+  ...
+
+```
+
+
 ## Database Operations
 
 The very first thing to do is to instruct Flask-SQLAlchemy to create a database based
