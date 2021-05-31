@@ -42,7 +42,7 @@ Next, we create an SQLAlchemy `object` and bind it to our `app`.
 db = SQLAlchemy(app)
 
 ```
-
+The database object `db` created contains all the functions and helpers from both SQLAlchemy and SQLAlchemy ORM.
 
 ## Model Definition
 
@@ -65,7 +65,9 @@ on the model classes.
 
 The `db.create_all()` function locates all the subclasses of `db.Model` and creates the corresponding tables in the database.
 
-from the terminal launch `flask shell` or `python` then type the following commands.
+from the terminal launch `flask shell` or `python` then type the following commands:
+  - Import the database instance `db` from `template.py`.
+  - Create all database `tables` according to the `models`.
 
 ```
 from template import db
