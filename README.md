@@ -34,16 +34,22 @@ Flask-SQLAlchemy is an extension for Flask which adds support for the SQLAlchemy
 
 To enable communication with a database, the Flask-SQLAlchemy extension takes the location of the application’s database from the `SQLALCHEMY_DATABASE_URI`.
 
-`SQLALCHEMY_TRACK_MODIFICATIONS` configuration option to False to disable a feature of Flask-SQLAlchemy that signals the application every time a change is about to be made in the database.
+`SQLALCHEMY_TRACK_MODIFICATIONS` configuration option to `False` to disable a feature of Flask-SQLAlchemy that signals the application every time a change is about to be made in the database.
 
+Next, we create an SQLAlchemy `object` and bind it to our `app`.
+
+```
+db = SQLAlchemy(app)
+
+```
 
 
 ## Model Definition
 
-In the context of an ORM, a `model` is a Python class with attributes that
-match the columns of a corresponding database table.
+In the context of an ORM, a `model` is a Python `class` with attributes that
+match the columns of a corresponding database `table`.
 
-To create a `model` or table schema to your application, you need to create a `class` that inherits from Model.
+To create a `model` or table schema to your application, you need to create a `class` that inherits from `Model`.
 
 ```
 class User(db.Model):
