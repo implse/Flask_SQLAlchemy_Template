@@ -26,9 +26,9 @@ Flask-SQLAlchemy is an extension for Flask which adds support for the SQLAlchemy
   
 - Activate the virtual environment using the command:
 
-- windows `env\Scripts\activate.bat`
+  - windows `env\Scripts\activate.bat`
 
-- Mac `. venv/bin/activate`
+  - Mac `. venv/bin/activate`
 
 - Clone the GitHub repo Flask SQLAlchemy Template:
 
