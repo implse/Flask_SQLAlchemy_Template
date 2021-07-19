@@ -4,14 +4,14 @@ This is a simple app using Flask and Flask-SQLAlchemy library which is an extens
 
 ## What is SQLAlchemy?
 
-SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
+SQLAlchemy is the Python SQL toolkit and Object Relational Mapper (ORM) that gives application developers the full power and flexibility of SQL.
 
 SQLAlchemy abstract the database system, simplifying the interactions with the database.
 
 
 ## What is Flask-SQLAlchemy?
 
-Flask-SQLAlchemy is an extension for Flask which adds support for the SQLAlchemy SQL toolkit/ORM (Object Relational Mapping).
+Flask-SQLAlchemy is an extension for Flask which adds support for the SQLAlchemy SQL toolkit / ORM (Object Relational Mapping).
 
 
 ## Configuration
@@ -20,7 +20,15 @@ Flask-SQLAlchemy is an extension for Flask which adds support for the SQLAlchemy
 
 - Create a virtual environment using the command:
 
-    `python -m venv env`
+  - windows   `python -m venv env`
+
+  - Mac `python3 -m venv venv`
+  
+- Activate the virtual environment using the command:
+
+- windows `env\Scripts\activate.bat`
+
+- Mac `. venv/bin/activate`
 
 - Clone the GitHub repo Flask SQLAlchemy Template:
 
@@ -76,7 +84,7 @@ db.create_all()
 
 ```
 
-If you check the application directory, you will now see a new file there called `database_name.db`.
+The result of `db.create_all()` is that the database schema is created representing our declared models and if you check the application directory, you will now see a new file `database_name.db`.
 
 
 # SQLite
