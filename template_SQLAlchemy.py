@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # SQLAlchemy Global Configuration
-# https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/#timeouts
+# https://flask-sqlalchemy.palletsprojects.com/en/2.x/
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database_name.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = "YourSecretKey"
@@ -25,3 +25,6 @@ class User(db.Model):
 @app.route("/")
 def index():
     return "<h2>You have just created your first Flask application supporting databases!</h2>"
+
+if __name__ == '__main__':
+   app.run(debug = True)
