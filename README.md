@@ -111,6 +111,6 @@ INSERT INTO musicien (name, birthdate, instruments, genre) VALUES ("Eugene Wrigh
 ### SQL commands
 
 ```
-SELECT name, email FROM user;
+SELECT name, instruments FROM user;
 
 ```
