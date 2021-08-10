@@ -102,10 +102,10 @@ launch `sqlite3` from the terminal.
 ### Add Users
 
 ```
-INSERT INTO user (username, email) VALUES ("Dave Brubeck", "dave.brubeck@quartet.liv");
-INSERT INTO user (username, email) VALUES ("Paul Desmond", "paul.desmond@quartet.liv");
-INSERT INTO user (username, email) VALUES ("Joe Morello", "joe.morello@quartet.liv");
-INSERT INTO user (username, email) VALUES ("Eugene Wright", "eugene.wright@quartet.liv");
+INSERT INTO musicien (name, birthdate, instruments, genre) VALUES ("Dave Brubeck", "December 6, 1920", "Piano", "Jazz");
+INSERT INTO musicien (name, birthdate, instruments, genre) VALUES ("Paul Desmond", "November 25, 1924", "Alto Saxophone", "Jazz");
+INSERT INTO musicien (name, birthdate, instruments, genre) VALUES ("Joe Morello", "July 17, 1928", "Drums", "Jazz");
+INSERT INTO musicien (name, birthdate, instruments, genre) VALUES ("Eugene Wright", "May 29, 1923", "Double Bass", "Jazz");
 ```
 
 ### SQL commands

@@ -14,13 +14,15 @@ db = SQLAlchemy(app)
 
 # Model Definition : Python class with attributes that match the columns of the corresponding database table
 # https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/
-class User(db.Model):
+class Musicien(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
+    name = db.Column(db.String(80), unique=True, nullable=False)
+    birthdate = db.Column(db.Text(80), nullable=False)
+    instruments = db.Column(db.Text(80), nullable=False)
+    genre = db.Column(db.Text(80), nullable=False)
 
     def __repr__(self):
-        return '<User %r>' % self.username
+        return f"{self.name}, {self.birthdate}, {self.instruments}, {self.genre}"
 
 @app.route("/")
 def index():
