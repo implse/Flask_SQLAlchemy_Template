@@ -12,7 +12,7 @@ app.config['SECRET_KEY'] = "YourSecretKey"
 # The db object instantiated from the class SQLAlchemy represents the database and provides access to all the functionality of Flask-SQLAlchemy.
 db = SQLAlchemy(app)
 
-# Model Definition : Python class with attributes that match the columns of the corresponding database table
+# Model Definition : Python class that inherits from db.Model with attributes that match the columns of the corresponding database table
 # https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/
 class Musicien(db.Model):
     id = db.Column(db.Integer, primary_key=True)
